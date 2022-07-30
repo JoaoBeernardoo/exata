@@ -1,24 +1,24 @@
-idade = int(input("Digite uma idade: "))
-nome = str(input('Digite seu nome: '))
-salario = float(input('Digite seu salario: '))
-sexo = str(input('Digite seu sexo: M ou F'))
-estado = str(input('Digite seu estado civil: S, C, V'))
+c = 0
+media = 0
+numeros= []
+soma = 0
+while c < 5:
+        numeros.append(float(input("Digite um numero: ")))
+        c = c + 1
+cont = 1
+while cont  < len(numeros):
+        if numeros[cont] != 0:
+           soma = soma+ numeros[cont]
+        cont = cont + 1
 
 
-while (idade < 0 or idade > 150):
-            idade = int(input("idade entre 0 ou 150 Digite uma idade: "))
+media = soma / 5
 
-while len(nome) <= 3:
-        nome = str(input('Seu nome deve ter mais de 3 letras'))
+print(f'{soma}')
+print(f'a sua media e {media}')
 
-while salario < 0:
-        salario = float(input('Seu salario tem que ser maior que 0'))
+        
 
-while (sexo!='F') and (sexo!= 'M'):
-        sexo = str(input('Biologicamente vc deve ser: F ou M: '))
-
-while (estado!='S') and (estado!= 'C') and (estado != 'V'):
-        estado = str(input('Esse esttado nao existe apenas: S, C, V: '))
 
 
 
