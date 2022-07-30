@@ -1,17 +1,29 @@
-n1 = float(input('Digite sua nota: '))
+idade = int(input("Digite uma idade: "))
+nome = str(input('Digite seu nome: '))
+salario = float(input('Digite seu salario: '))
+sexo = str(input('Digite seu sexo: M ou F'))
+estado = str(input('Digite seu estado civil: S, C, V'))
 
-n2= float(input('Digite sua nota: '))
 
-media=(n1+n2)/2
+while (idade < 0 or idade > 150):
+            idade = int(input("idade entre 0 ou 150 Digite uma idade: "))
 
-if media > 6:
-    print(f'Aprovado sua media é {media}')
+while len(nome) <= 3:
+        nome = str(input('Seu nome deve ter mais de 3 letras'))
 
-elif media == 6:
-    print(f'Recuperação sua media é {media}')
+while salario < 0:
+        salario = float(input('Seu salario tem que ser maior que 0'))
 
-else:
-    print(f'Reprovado sua media é {media}')
+while (sexo!='F') and (sexo!= 'M'):
+        sexo = str(input('Biologicamente vc deve ser: F ou M: '))
+
+while (estado!='S') and (estado!= 'C') and (estado != 'V'):
+        estado = str(input('Esse esttado nao existe apenas: S, C, V: '))
+
+
+
+
+
 
 
 
