@@ -4,12 +4,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 
 }
 
 
 body{
     background-color: #c0d0e6;
+    overflow: hidden;
 }
 
 
@@ -145,6 +147,45 @@ a{
     color: rgb(10, 8, 8);
 }
 
+
+@media (max-width: 780px){
+    main {
+        background-color: rgb(253, 249, 249);
+        width: 69%;
+        height: 370px;
+        position: absolute;
+        bottom: 78px;
+        left: 15%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+
+ footer{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 505px;
+}
+
+
+.nome{
+    
+    width: 60px;
+    position: fixed;
+    top: 26px;
+    font-size: 28px;
+    
+
+}
+
+
+}
 
 
     

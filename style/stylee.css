@@ -94,3 +94,23 @@ footer{
     position: relative;
     top: 569px;
 }
+
+@media (max-width: 1303px){
+    main{
+
+    background-color: rgb(253, 249, 249);
+    width: 65%;
+    height: 495px;
+    position: absolute;
+    bottom: 52px;
+    left: 12%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    border-radius: 4px;
+    font-family: 'Ubuntu', sans-serif;
+}
+}
