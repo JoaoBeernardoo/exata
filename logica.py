@@ -1,26 +1,20 @@
-c = 0
-media = 0
-numeros= []
-soma = 0
-while c < 5:
-        numeros.append(float(input("Digite um numero: ")))
-        c = c + 1
-cont = 1
-while cont  < len(numeros):
-        if numeros[cont] != 0:
-           soma = soma+ numeros[cont]
-        cont = cont + 1
+galera = list()
+dado = list()
+
+dado.append(str(input('qual sua nota: ')))
+dado.append(int(input('qual sua nota: ')))
+dado.append(int(input('qual sua nota: ')))
+dado.append(int(input('qual sua nota: ')))
+galera.append(dado[:])
+dado.clear
+
+print(dado[2], dado[3])
 
 
-media = soma / 5
-
-print(f'{soma}')
-print(f'a sua media e {media}')
-
-        
-
-
-
+   dado1=(int(input('digite uma nota: ')))
+    dado2=(int(input('digite uma nota: '))) 
+    dado3=(int(input('digite uma nota: '))) 
+    dado4=(int(input('digite uma nota: ')))
 
 
 
