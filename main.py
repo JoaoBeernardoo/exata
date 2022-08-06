@@ -1,4 +1,3 @@
-from re import S
 import time
 
 def media(a=0, b=0, c=0, d=0):
@@ -29,7 +28,7 @@ while c == 's':
     dado.clear
 
     media(dado[0], dado[1], dado[2], dado[3])
-    c = str(input('Quer continuar s/n : '))
+    c = str(input('Quer continuar s/n :: '))
    
 
 print('Bem vindo ao menu')
