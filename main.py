@@ -12,7 +12,17 @@ def media(a=0, b=0, c=0, d=0):
         print(f'Voce esta reprovado com a media de {media}')
     
     
-    
+
+def opçao(c=0):
+    c = 'n'
+    ok = str(input('Deseja ir para o menu principal? s/n  '))
+
+    if ok == 's':
+        print('Aguarde em quanto te redirecionamos para o menu principal')
+    else:
+        print('Opção invalida!')
+
+
 
 
 galera = list()
@@ -29,7 +39,8 @@ while c == 's':
 
     media(dado[0], dado[1], dado[2], dado[3])
     c = str(input('Quer continuar s/n :: '))
-   
+    opçao(c)
+    time.sleep(2)
 
 print('Bem vindo ao menu')
     
