@@ -1,20 +1,24 @@
-galera = list()
+def caixa(a=0, b=0, c=0, d=0):
+   soma = a + b + c + d
+   print(f'O total da compra foi {soma}')
+
+
 dado = list()
-
-dado.append(str(input('qual sua nota: ')))
-dado.append(int(input('qual sua nota: ')))
-dado.append(int(input('qual sua nota: ')))
-dado.append(int(input('qual sua nota: ')))
-galera.append(dado[:])
-dado.clear
-
-print(dado[2], dado[3])
+compra = list()
+c = 'n'
 
 
-   dado1=(int(input('digite uma nota: ')))
-    dado2=(int(input('digite uma nota: '))) 
-    dado3=(int(input('digite uma nota: '))) 
-    dado4=(int(input('digite uma nota: ')))
+while c == 'n':
+   for p in range(0,4):
+      dado.append(str(input('Qual nome do item: ')))
+      dado.append(float(input('Qual valor do item: ')))
+   
+   compra.append(dado[:])
+   dado.clear
+   caixa(dado[1],dado[3],dado[5],dado[7])
+   c = str(input('Deseja continuar? s/n'))
+
+print('Bem vindo de volta ao menu *-*')
 
 
 

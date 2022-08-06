@@ -9,7 +9,7 @@ def media(a=0, b=0, c=0, d=0):
     elif media == 6:
         print(f'Voce esta de recuperação com a media de {media}: ')
     else:
-        print(f'Voce esta reprovado com a media de {media}')
+        print(f'Voce esta reprovado com a media de {media}: ')
     
     
 
@@ -30,10 +30,10 @@ dado = list()
 
 c = 's'
 while c == 's':
-    dado.append(int(input('qual sua nota: ')))
-    dado.append(int(input('qual sua nota: ')))
-    dado.append(int(input('qual sua nota: ')))
-    dado.append(int(input('qual sua nota: ')))
+
+    for p in range(0,4):
+        dado.append(int(input('qual sua nota: ')))
+    
     galera.append(dado[:])
     dado.clear
 
