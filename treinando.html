@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>somando valores</h1>
+
+   
+        <input type="number" name="txtn1" id="txtn1" class="txtn1">
+        <select name="" id="" class="selev">
+            <option value="+"class="+">+</option>
+            <option value="-" class="-">-</option>
+            <option value="+"class="/">/</option>
+            <option value="-" class="x">x</option>
+        </select>
+        <input type="number" name="txtn2" id="txtn2" class="txtn2">
+        <input type="button" value="somar" onclick="somar()">
+
+      <div class="res">resultado</div>
+
+      <script>
+        
+
+        function somar(){
+                var tn1 = window.document.querySelector('input.txtn1') // definindo variavel pro input 1
+                var tn2 = window.document.querySelector('input.txtn2')// definindo variavel pro input 2
+                var res = window.document.querySelector('div.res') // definindo variavel pra div res
+                var n1 = Number(tn1.value) // tratando os resultados do input para transforma em numeros
+                var n2 = Number(tn2.value)
+                var s = n1 + n2  // somando em uma variavel s os valores de n1 e n2 ja formatados como numeros
+                res.innerHTML = `A soma entre ${n1} e ${n2} e igual a ${s}` // mostrando o resultado com crase
+        }
+      </script>
+
+
+</body>
+
+</html>

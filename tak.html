@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tmj</title>
+</head>
+<body>
+    
+     <h1>Ola mundo</h1>
+     <p>chatissimo</p>
+     <h2>voce  e muito chato </h2>
+     <div class="msg" >clique em mim</div>
+
+     <div class="area" >
+          intereja..
+     </div>
+
+
+     <script> 
+      var a = window.document.querySelector('div.area')
+
+       a.addEventListener('click', clicar)
+       a.addEventListener('mouseenter', entrar)
+       a.addEventListener('mouseout', sair)
+
+        function clicar(){
+         
+          a.innerText = 'Va se fuder'
+          a.style.colowr = 'green'
+        }
+
+        function entrar(){
+          a.innerText = 'Entrou!'
+        }
+
+        function sair(){
+           a.innerText ='Saiu!'
+        }
+
+        
+          var d = window.document.querySelector('div.msg')
+          d.style.background = 'blue'
+          window.document.write('voce e chati pq: '+d.innerText)
+       
+        
+
+        
+     
+     </script>
+
+ 
+
+</body>
+</html>
