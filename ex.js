@@ -1,6 +1,9 @@
-var c = 1
+let pos = 0
+let valores = ['joao', 1, 7, 4, 2, 9]
+ 
 
-while (c < 6){
-    console.log('tudo bem? fodac ')
-    c++
+while (pos<valores.length){
+    
+    console.log(`a posição ${pos} tem o valor de ${valores[pos]}`)
+    pos++
 }
